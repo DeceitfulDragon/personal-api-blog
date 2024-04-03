@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/form.css">
+    <title>Fennec Forum</title>
+</head>
+<body>
+    <!-- Header with button -->
+    <header>
+        <button class="toggle-button">🦊</button>
+        <h1>The Fennec Forum</h1>
+    </header>
+
+    <main>
+        <aside>
+            <!-- Fennec Fox image -->
+            <img src="./assets/images/fennec.png" alt="A cartoony fennec fox">
+        </aside>
+        
+        <section>
+            <h2>Start Chatting!</h2>
+            <form>
+                <!-- Message Form -->
+                <label for="messageUsername">Username:</label>
+                <input name="username" id="messageUsername" type="text"/>
+
+                <label for="messageTitle">Title:</label>
+                <input name="title" id="messageTitle" type="text"/>
+
+                <label for="messageContent">Content:</label>
+                <textarea name="content" id="messageContent"    type="text" rows="4"></textarea>
+
+                <input type="submit" value="Send!"/>
+            </form>
+        </section>
+    </main>
+    <!-- Scripts -->
+    <script src="./assets/js/logic.js"></script>
+    <script src="./assets/js/form.js"></script>
+</body>
+</html>
