@@ -9,12 +9,15 @@ const changePage = function()
 // For setting blog data to local storage
 const dataToLocalStorage = function(data)
 {
+    console.log("1");
     const blogData = dataFromLocalStorage();
 
     blogData.push(data);
     const stringFromData = JSON.stringify(blogData);
+    console.log(blogData);
 
     localStorage.setItem("blogs", stringFromData)
+    console.log("3");
 }
 
 // For when the send message button is pressed
