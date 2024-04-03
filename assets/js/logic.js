@@ -1,5 +1,13 @@
 const themeChangerButton = document.querySelector(".toggle-button");
 
+// For getting the blog data
+const dataFromLocalStorage = function() 
+{
+    const unreadyData = localStorage.getItem("blog");
+    const readyData = JSON.parse(unreadyData);
+    return readyData || [];
+}
+
 // For applying a theme
 const applyTheme = function(theme)
 {
