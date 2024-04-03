@@ -1,12 +1,16 @@
 :root {
     /* Setup my colors */
     --main-color: #db7f34;
-    --secondary-color: #2e2e2e;
+    --secondary-color: #747474;
+    --tertiary-color: #ffffff;
     --accent-color: #e7ab3c;
-    --second-accent-color: rgb(0, 0, 0);
+    --second-accent-color: #000000;
+    --text-color: #000000;
+    --header-text-color: white;
 }
 
 body, html {
+    background-color: var(--tertiary-color);
     margin: 0;
     padding: 0;
     width: 100%;
@@ -15,7 +19,7 @@ body, html {
 
 header {
     background-color: var(--main-color);
-    color: white;
+    color: var(--header-text-color);
     padding: 10px 20px;
     display: flex;
     align-items: center;
@@ -25,7 +29,7 @@ header {
 
 .toggle-button {
     background-color: var(--accent-color);
-    color: white;
+    color: var(--text-color);
     border: none;
     padding: 10px;
     cursor: pointer;
@@ -36,6 +40,11 @@ h1 {
     margin: 0;
     flex-grow: 1;
 }
+
+h2 {
+    color: var(--text-color);
+}
+
 
 main {
     display: flex;
@@ -48,7 +57,7 @@ aside {
     border-right: 3px solid var(--second-accent-color);
     
     flex: 2;
-    color: white;
+    color: var(--text-color);
     padding: 20px;
     display: flex;
     justify-content: center;
@@ -98,6 +107,7 @@ input, textarea {
 label {
     font-weight: bold;
     font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: var(--text-color);
 }
 
 
