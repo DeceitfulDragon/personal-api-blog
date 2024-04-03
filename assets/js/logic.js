@@ -3,7 +3,7 @@ const themeChangerButton = document.querySelector(".toggle-button");
 // For getting the blog data
 const dataFromLocalStorage = function() 
 {
-    const unreadyData = localStorage.getItem("blog");
+    const unreadyData = localStorage.getItem("blogs");
     const readyData = JSON.parse(unreadyData);
     return readyData || [];
 }

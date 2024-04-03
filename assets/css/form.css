@@ -1,0 +1,29 @@
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label, form input, form textarea, form input[type="submit"] {
+    margin: 10px 0;
+}
+
+input[type="submit"] {
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;    
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+label {
+    font-weight: bold;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: var(--text-color);
+}
